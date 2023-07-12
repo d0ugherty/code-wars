@@ -9,8 +9,6 @@ int main () {
     return 0;
 }
 
-
-
 bool narcissistic( int value ){
   //Code away
   int result = 0;
@@ -42,12 +40,9 @@ bool narcissistic( int value ){
     for(int i = 0; i < digitCount; i++) {
         raised *= currentDigit;
         std::cout << "raised = " << raised << std::endl;
-      
-    }
+   }
     result += raised;
     std::cout << "result = " << result << std::endl;
   }
-  
-  return result == value;
-
+return result == value;
 }
