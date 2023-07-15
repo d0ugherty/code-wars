@@ -7,7 +7,6 @@ def best_planet(solar_system, max_size):
     for planet in solar_system:
         if elements in planet:
             suitable_planets.append(planet)
-    print(suitable_planets)
     return 0
 
 solar_system = ['OHNCCaP_100', 'OHC_200', 'OCa_50', 'OHCCaP_400', 'OHNCCaP_225']
