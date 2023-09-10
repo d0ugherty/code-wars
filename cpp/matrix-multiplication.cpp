@@ -10,7 +10,7 @@ std::vector<std::vector<int>> matrix_multiplication(std::vector<std::vector<int>
         for(int col = 0; col < n; col++) {
             int sum = 0;
             for(int i = 0;i < n; i++) {
-                sum += a[row][i] * b[row][i];
+                sum += a[row][i] * b[i][col];
             }
             matrix_c[row][col] = sum;
         }     
