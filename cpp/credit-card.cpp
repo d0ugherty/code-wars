@@ -8,7 +8,8 @@
 
  int main() {
     long long int test = 12345678;
-    std::cout<< "test number: " + std::to_string(test) << std::endl; 
+    std::cout<< "test number: " + std::to_string(test) << std::endl;
+    std::cout << validate(test) << std::endl;
     return 0;  
  }
 
