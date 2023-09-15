@@ -8,6 +8,7 @@ def getLength(number):
     return int(math.log10(number) + 1)
 
 def luhns(number):
+    
     sum = 0
     length = getLength(number)
     parity = length % 2
