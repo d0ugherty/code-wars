@@ -16,6 +16,9 @@ std::vector<std::vector<int> > matrixAddition(std::vector<std::vector<int> > a,s
     return matrix_c;
 }
 
+/** Testing and Main functions
+ ** Not part of solution
+ **/
 void init_matrix(std::vector<std::vector<int>> &matrix) {
      for (int i = 0; i < matrix.size(); i++) {
         for (int j = 0; j < matrix[0].size(); j++) {
