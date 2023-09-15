@@ -7,14 +7,10 @@ def hex_string_to_RGB(hex_string):
     hex_string = hex_string.lower()
     rgb = {'r':0,'g':0, 'b':0}
     
-    # break hex string down into rgb components
-    red = hex_string[1:3]
-    green = hex_string[3:5]
-    blue = hex_string[5:7]
-    
-    rgb['r'] = hex_to_dec(red[0]) * 16 + hex_to_dec(red[1])
-    rgb['g'] = hex_to_dec(green[0]) * 16 + hex_to_dec(green[1])
-    rgb['b'] = hex_to_dec(blue[0]) * 16 + hex_to_dec(blue[1])
+    # break hex string down into rgb components 
+    rgb['r'] = hex_to_dec(hex_string[1]) * 16 + hex_to_dec(hex_string[2])
+    rgb['g'] = hex_to_dec(hex_string[3]) * 16 + hex_to_dec(hex_string[4])
+    rgb['b'] = hex_to_dec(hex_string[5]) * 16 + hex_to_dec(hex_string[6])
     return rgb
 
 def hex_to_dec(hex):
@@ -56,7 +52,7 @@ def hex_to_dec(hex):
             print("error at hex_to_dec  input: ")
             print(hex)
 
-# Create an ArgumentParser object
+# Pass test values through command line
 parser = argparse.ArgumentParser(description="code wars hexadecimal to RGB value")
 
 parser.add_argument('hex_code', help='hex code')
