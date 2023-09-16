@@ -5,9 +5,6 @@
 
 std::string rot13(const std::string& msg) {
     std::string result = "";
-   // std::regex pattern("[$&+,:;=?@#|0-9'<>.^*()%!-]");
-   // std::map<char,int> map1;
-   // std::map<char,int> map2;
     
     for (int i = 0; i < msg.size(); i++) {
         if (std::isalpha(msg[i])) {
