@@ -2,16 +2,6 @@
 #include <iostream>
 #include <vector>
 
-std::string likes(const std::vector<std::string> &names);
-
-int main() {
-    std::vector<std::string> names = {"Alex", "Jacob", "Mark", "Max"};
-    std::cout << likes(names);
-    return 0;
-}
-
-
-
 std::string likes(const std::vector<std::string> &names) {
     int length = names.size();
     switch(length) {
@@ -26,4 +16,10 @@ std::string likes(const std::vector<std::string> &names) {
         default:
             return names[0] + ", " + names[1] + " and " + std::to_string(length - 2) + " others like this";
         }
+}
+
+int main() {
+    std::vector<std::string> names = {"Alex", "Jacob", "Mark", "Max"};
+    std::cout << likes(names);
+    return 0;
 }
