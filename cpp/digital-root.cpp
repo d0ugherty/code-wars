@@ -1,15 +1,6 @@
 #include <iostream>
 #include <cmath>
 
-int digital_root(int n);
-
-int main() {
-    int test = 167346;
-    std::cout << "test int: " << std::to_string(test) << std::endl;
-    std::cout << "digital root: " << std::to_string(digital_root(test)) << std::endl;
-    return 0;
-
-}
 int digital_root(int n) { 
     while(n >= 10) {
         int sum = 0;
@@ -20,4 +11,12 @@ int digital_root(int n) {
         n = sum;
     }
     return n;
+}
+
+int main() {
+    int test = 167346;
+    std::cout << "test int: " << std::to_string(test) << std::endl;
+    std::cout << "digital root: " << std::to_string(digital_root(test)) << std::endl;
+    return 0;
+
 }

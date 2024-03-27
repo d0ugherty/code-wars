@@ -3,15 +3,6 @@
 #include <sstream>
 #include <vector>
 
-std::string spinWords(const std::string &str);
-std::vector<std::string> splitString(const std::string& str, char delim);
-
-int main() {
-    std::string str = "My fellow Americans";
-    std::cout << spinWords(str);
-    return 0;
-}
-
 std::string spinWords(const std::string &str) {
     std::vector<std::string> splitCopy = splitString(str, ' ');
     std::string result;
@@ -47,3 +38,10 @@ std::vector<std::string> splitString(const std::string& str, char delim) {
     }
     return result;
 }
+
+int main() {
+    std::string str = "My fellow Americans";
+    std::cout << spinWords(str);
+    return 0;
+}
+

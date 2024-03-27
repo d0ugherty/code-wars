@@ -2,21 +2,10 @@
 #include <iostream>
 #include <string>
 
-
-
-std::string encrypt(std::string, int n);
-std::string decrypt(std::string, int n);
-
-int main () {
-    encrypt("This is a test!", 0);
-    std::cout << decrypt("hsi  etTi sats!", 1) << std::endl;
-    return 0;
-}
-
 std::string encrypt(std::string text, int n) {
     if (text.empty() || n < 1)  return text;
 
-    while(n > 0) {
+    while(n > 0)
         std::string odd = "";
         std::string even = "";
         for(int i = 0; i < text.length(); i++){
@@ -59,4 +48,10 @@ std::string decrypt(std::string encryptedText, int n) {
       n--;
     }
  return encryptedText;
+}
+
+int main () {
+    encrypt("This is a test!", 0);
+    std::cout << decrypt("hsi  etTi sats!", 1) << std::endl;
+    return 0;
 }
